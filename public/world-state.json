@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-07-13T14:00:00Z",
+  "presence": {
+    "status": "away",
+    "lastActivity": "programando",
+    "since": "2026-07-13T12:30:00Z"
+  },
+  "data": {
+    "github": {
+      "recentCommits": [
+        { "repo": "tars", "message": "add whisper skill", "at": "2026-07-13T11:50:00Z" },
+        { "repo": "drope-world", "message": "engine: TileMap + Proximity", "at": "2026-07-13T02:10:00Z" }
+      ],
+      "topRepos": ["tars", "drope-world"]
+    },
+    "dota": {
+      "mmrEstimate": 4200,
+      "topHeroes": ["Invoker", "Rubick", "Earth Spirit"],
+      "lastMatchAt": "2026-07-12T23:00:00Z"
+    },
+    "clash": { "trophies": 5400, "level": 42 },
+    "brawl": { "trophies": 18000 },
+    "book": {
+      "title": "El nombre de la rosa",
+      "progress": 0.62,
+      "note": "El monasterio como sistema cerrado; me suena a arquitectura de software."
+    },
+    "twitch": { "isLive": false }
+  }
+}
