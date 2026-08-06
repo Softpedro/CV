@@ -16,12 +16,14 @@ import { spaces, spaceForClass, spaceCenter, drops } from '../content';
 import type { SpaceDefinition } from '../content';
 import { useGameStore } from '../data';
 
-const MAP_URL = '/maps/testroom.json';
+// BASE_URL (siempre termina en '/') para que los assets carguen bajo subpath.
+const BASE = import.meta.env.BASE_URL;
+const MAP_URL = `${BASE}maps/testroom.json`;
 const PROXIMITY_RADIUS = 110; // px: "cerca para entrar" (no todo el mundo)
 // Tilesheet Kenney "Tiny Town" (CC0): 16px/tile, grid de 12 columnas.
-const ATLAS: import('../engine').AtlasConfig = { url: '/art/tiny-town.png', tile: 16, cols: 12 };
+const ATLAS: import('../engine').AtlasConfig = { url: `${BASE}art/tiny-town.png`, tile: 16, cols: 12 };
 // Personajes: Kenney "Tiny Dungeon" (CC0), misma serie y mismo grid que Tiny Town.
-const CHARS: import('../engine').AtlasConfig = { url: '/art/tiny-dungeon.png', tile: 16, cols: 12 };
+const CHARS: import('../engine').AtlasConfig = { url: `${BASE}art/tiny-dungeon.png`, tile: 16, cols: 12 };
 const AVATAR_TILE = 99; // figura de túnica violeta: es la que pega con la marca
 const WALK_BOB_AMP = 2; // px de rebote al caminar
 const WALK_BOB_SPEED = 11; // rad/s del rebote

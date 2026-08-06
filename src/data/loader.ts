@@ -4,7 +4,8 @@
 
 import type { WorldState } from './types';
 
-const DEFAULT_URL = '/world-state.json';
+// BASE_URL (siempre termina en '/') para que el fetch funcione bajo subpath.
+const DEFAULT_URL = `${import.meta.env.BASE_URL}world-state.json`;
 
 export async function loadWorldState(url: string = DEFAULT_URL): Promise<WorldState> {
   const res = await fetch(url, { cache: 'no-cache' });
